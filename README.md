@@ -1,6 +1,25 @@
 # iNotebook-React
 iNotebook is an online web platform where you can create, edit, upload, delete your notes/information privately and securely without any disturbancee.
 
+# Description About Project
+
+iNotebook is made from the pain of writing all the things in notebook which is very hectic : So we made an online web platform where you can create, edit, upload, delete your notes/information privately and securely without any disturbancee.You can also access your notes anywhere in your world, at anytime time. So dont forget to Create note because creating anything is always important.
+
+# Libraries used
+1) HTML
+2) CSS
+3) Javascript
+4) External Fonts from "googlefonts.com"
+5) External icons from https://fontawesome.com/
+
+# npm packages used
+1) react.js
+2) node.js
+3) mongoose
+
+# Database Used
+Mongodb
+
 # Home Page
 
 ![Screenshot 2024-01-31 153751](https://github.com/sapnachikhale/iNotebook-React/assets/155234585/0a4b86d7-b7c2-455e-bd95-d9b24c136027)

@@ -30,12 +30,9 @@ const Login = (props) => {
             props.showAlert("Invalid credentials", "danger");
         }
     };
-    
-
     const onChange = (e)=>{
         setCredentials({...credentials, [e.target.name]: e.target.value})
     }
-
     return (
         <div>
             <center><table style={{width:"700px"}}>
@@ -60,9 +57,9 @@ const Login = (props) => {
                     <label htmlFor="password" className="form-label" >Password</label>
                     <input type="password" className="form-control" placeholder="password*" autoComplete="current-password" value={credentials.password} onChange={onChange} name="password" id="password" />
                 </div>
-                <button  type="submit" className="btn btn-primary"  >Login</button>
+                <button  type="submit" className="btn btn-primary my-2" >Login</button>
                 </form>
-                <p >Don't have an account? <Link to="/signup" >register</Link> </p>
+                <p className='my-2'>Don't have an account? <Link to="/signup" >register</Link> </p>
             </td>
                     </tr>
                     </tbody>

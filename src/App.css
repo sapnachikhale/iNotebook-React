@@ -13,6 +13,90 @@
   }
 }
 
+@media only screen and (max-width: 600px) {
+  .App-header {
+    font-size: calc(8px + 2vmin);
+  }
+
+  .container {
+    width: 90%;
+    margin: 0 auto;
+  }
+  h2 {
+    font-size: 2rem; /* Adjust based on screen size */
+  }
+  
+  p {
+    font-size: 1rem; /* Adjust based on screen size */
+  }
+  .row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  
+  .col-md-6 {
+    flex: 1;
+    min-width: 300px; /* Adjust as needed */
+    padding: 10px;
+  }
+  /* Styles for mobile screens */
+@media (max-width: 768px) {
+  .col-md-6 {
+    flex: 100%;
+    max-width: 100%;
+  }
+
+  .aboutImg {
+    height: 200px;
+  }
+
+  .awesome {
+    width: 100%;
+  }
+
+  .login img {
+    width: 100%;
+  }
+
+  .text-center {
+    text-align: center;
+  }
+}
+
+  .aboutImg {
+    background-size: cover;
+  }
+
+  .home-container {
+    height: auto;
+    margin-top: 0;
+    padding: 20px;
+  }
+
+  .respo {
+    font-size: 1.2rem;
+  }
+
+  .img-fluid {
+    width: 100%;
+    height: auto;
+  }
+
+  .text-center {
+    text-align: center;
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -28,11 +112,11 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.aboutImg {
+  width: 100%;
+  height: 300px;
+  background-image: url('./images/great.jpg'); /* Adjusted path */
+  background-size: cover;
+  background-position: center;
 }
+

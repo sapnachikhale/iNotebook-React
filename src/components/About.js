@@ -1,110 +1,48 @@
-import React from 'react'
+import React from 'react';
 import '../Styles/About.css';
-import awesome from '../images/great.jpg'
-import login from '../images/awesome.jpg'
+import awesome from '../images/great.jpg';
+import login from '../images/awesome.jpg';
 import { Link } from "react-router-dom";
 import { Button } from '@mui/material';
 import Alert from "./Alert";
 
 function About() {
-    return (
-        <>
-            <Alert />
-            <div className="text-white aboutImg text-center">
-                </div>
-                <div className="container mt-5 ">
-                    <div className="row">
-                        <div className="col-md-6 d-flex flex-column justify-content-center">
-                            <h2 className="mb-3" style={{ fontWeight: "Bold" }}>Make something <span style={{ color: "#9C27B0" }}>Awesome</span> </h2>
-                            <p>iNotebook is made from the pain of writing all the things in notebook which is very hectic : So we mad an online web platform where you can create, edit, upload, delete your notes/information privately and securely without any disturbancee.
-                                you can also access your notes anywhere in your world, at anytime time . So dont forget to Create note because creating anything is always important
-                            </p>
-                            <div className="d-flex justify-content-center mt-3">
-                                <Button component={Link} to="/login" variant="contained" color="secondary" style={{ color: "White", textTransform: "none", fontFamily: "'Poppins', sans-serif", fontSize: "1.3rem" }}>Create New Note</Button>
-                            </div>
-                        </div>
-                        <div className="col-md-6">
-                            <img className="img-fluid awesome" src={awesome} alt="about-awesome" />
-                        </div>
-                    </div>
-
-                    <div className="row login mt-5 mb-5 p-5">
-                        <div className="col-md-6">
-                            <img className="img-fluid" src={login} alt="about-awesome" style={{ width:"500px"}} />
-                        </div>
-                        <div className="col-md-6 d-flex flex-column justify-content-center">
-                            <h2 className="mb-3" style={{ fontWeight: "Bold" }}>Powering the <span style={{ color: "#9C27B0" }}>internet’s visuals</span> </h2>
-                            <p>
-                                How we started? The concept was simple. iNotebook was born from the pain of writing all the things in notebook which is very hectic :( .
-                                An online web platform where you can create, edit, upload, delete your notes/information privately and securely without any disturbancee
-                            </p>
-                            <div className="d-flex justify-content-center mt-3">
-                                <Button component={Link} to="/signup" variant="contained" color="secondary" style={{ color: "White", textTransform: "none", fontFamily: "'Poppins', sans-serif", fontSize: "1.3rem" }}>Sign up now</Button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <footer>
-                    <div className="content">
-                        <div className="top">
-                            <div className="logo-details">
-                                <span className="logo_name"><span style={{ color: "#9C27B0" }}>i</span>Notebook</span>
-                            </div>
-                            <div className="media-icons">
-                                <Link to="/"><i className="fab fa-facebook-f"></i></Link>
-                                <Link to="/"><i className="fab fa-twitter"></i></Link>
-                                <Link to="/"><i className="fab fa-instagram"></i></Link>
-                                <Link to="/"><i className="fab fa-linkedin-in"></i></Link>
-                                <Link to="/"><i className="fab fa-youtube"></i></Link>
-                            </div>
-                        </div>
-                        <div className="link-boxes">
-                            <ul className="box">
-                                <li className="link_name">Company</li>
-                                <li><Link to="/">Home</Link></li>
-                                <li><Link to="/">New Notes</Link></li>
-                                <li><Link to="/about">About us</Link></li>
-                                <li><Link to="/">Get started</Link></li>
-                            </ul>
-                            <ul className="box">
-                                <li className="link_name">Services</li>
-                                <li><Link to="/">Your Notes</Link></li>
-                                <li><Link to="/">New Note</Link></li>
-                            </ul>
-                            <ul className="box">
-                                <li className="link_name">Account</li>
-                                <li><Link to="/login">Sign-in</Link></li>
-                                <li><Link to="/register">Join Free</Link></li>
-                            </ul>
-                            <ul className="box">
-                                <li className="link_name">Top Categories</li>
-                                <li><Link to="/c/61554bfe801949ad7b9be4ff">Java Notes</Link></li>
-                                <li><Link to="/c/61554c2753bcf306407cb1bd"> Van Notes</Link></li>
-                                <li><Link to="/c/61554c43d2a6b15f764aff36">Campus-drive Notes</Link></li>
-                                <li><Link to="c/61554c63dfd6a37d71449b5c">Survivalist Notes</Link></li>
-                            </ul>
-                            <ul className="box input-box">
-                                <li className="link_name">About iNotebook</li>
-                                <li style={{ color: "#F7FFFF" }}>
-                                    iNotebook is an online web platform where you can create, edit, upload, delete your notes/information privately and securely without any disturbancee
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div className="bottom-details">
-                        <div className="bottom_text">
-                            <span className="copyright_text">Copyright © 2024 <Link to="/">iNotebook</Link>All rights reserved</span>
-                            <span className="policy_terms">
-                                <Link to="/">Privacy policy</Link>
-                                <Link to="/">Terms & condition</Link>
-                            </span>
-                        </div>
-                    </div>
-                </footer>
-           
-        </>
-    )
+  return (
+    <>
+      <Alert />
+      <div className="aboutImg text-center"></div>
+      <div className="container mt-5">
+        <div className="row">
+          <div className="col-md-6 d-flex flex-column justify-content-center text-center text-md-left">
+            <h2 className="mb-3" style={{ fontWeight: "bold" }}>Make something <span style={{ color: "#9C27B0" }}>Awesome</span></h2>
+            <p>
+              iNotebook is made from the pain of writing all the things in a notebook which is very hectic. So we made an online web platform where you can create, edit, upload, delete your notes/information privately and securely without any disturbance. You can also access your notes anywhere in the world, at any time. So don't forget to create notes because creating anything is always important.
+            </p>
+            <div className="d-flex justify-content-center mt-3">
+              <Button component={Link} to="/login" variant="contained" color="secondary" style={{ color: "White", textTransform: "none", fontFamily: "'Poppins', sans-serif", fontSize: "1.25rem" }}>Get Started</Button>
+            </div>
+          </div>
+          <div className="col-md-6 d-flex justify-content-center">
+            <img src={awesome} alt="awesome" className="img-fluid note-img" />
+          </div>
+        </div>
+        <div className="row mt-5">
+          <div className="col-md-6 d-flex justify-content-center">
+            <img src={login} alt="login" className="img-fluid note-img" />
+          </div>
+          <div className="col-md-6 d-flex flex-column justify-content-center text-center text-md-left">
+            <h2 className="mb-3" style={{ fontWeight: "bold" }}>Sign in and Enjoy</h2>
+            <p>
+              Create your account and start experiencing our note-taking app. It is fast, secure, and easy to use. Just a few steps and you are ready to go.
+            </p>
+            <div className="d-flex justify-content-center mt-3">
+              <Button component={Link} to="/login" variant="contained" color="secondary" style={{ color: "White", textTransform: "none", fontFamily: "'Poppins', sans-serif", fontSize: "1.25rem" }}>Sign In</Button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </>
+  );
 }
 
-export default About
+export default About;
